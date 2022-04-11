@@ -18,8 +18,16 @@
     <ul>
         <% for(let i=0; i < allDrinks.length; i++) { %>
             <li>
-                    <%=allDrinks[i].name %>
-                </a>
+                    <%const drinkName = allDrinks[i].name
+                    const words = drinkName.split(" ")
+                    let fullName 
+                    
+                    for (let i = 0; i < words.length; i++) {
+                        words[i] = words[i][0].toUpperCase() + words[i].substr(1) %>
+                        
+                        <% } %>
+                        <a href="/drinks/<%=allDrinks[i].name%>">
+                            <%= words.join(" ") %></a>
             </li>
             <% } %>
     </ul>

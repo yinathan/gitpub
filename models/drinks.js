@@ -25,7 +25,7 @@ const drinks = [
     image: "https://i.imgur.com/FLucOLr.jpg",
   },
   {
-    name: "if stateMint julep",
+    name: "Mint julep",
     price: 2,
     image: "https://i.imgur.com/yaoK0Dg.jpg",
   },
