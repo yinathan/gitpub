@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gitPub App</title>
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column nowrap;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        .image {
+            max-width: 300px;
+        
+        }
+        
+    </style>
+    <h1>At foo bar</h1>
+        <%  const drinkName = drink.name 
+            const words=drinkName.split(" ")
+                    for (let i = 0; i < words.length; i++) {
+                        words[i] = words[i][0].toUpperCase() + words[i].substr(1) %>
+                        
+                        <% } %>
+    <h3> <%= words.join(" ") %> </h3>
+    <img class = "image" src = "<%=drink.image%>">
+
+    <a href="/drinks">Return to Drink List</a>
+
+
+   
+</body>
+</html>
