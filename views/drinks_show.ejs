@@ -19,10 +19,17 @@
             flex-flow: column nowrap;
         }
         h1 {
-            font-size: 50px;
+            font-size: 60px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 0px;
         }
         h3 {
             font-size: 30px;
+            margin-top: 0px;
         }
         .image {
             max-width: 300px;
@@ -37,7 +44,9 @@
                         words[i] = words[i][0].toUpperCase() + words[i].substr(1) %>
                         
                         <% } %>
-    <h3> <%= words.join(" ") %> </h3>
+    <h2> <%= words.join(" ") %> </h2>
+    <h3>Price: $<%= drink.price %>.00 </h3>
+
     <img class = "image" src = "<%=drink.image%>">
 
     <a href="/drinks">Return to Drink List</a>
