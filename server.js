@@ -5,7 +5,7 @@ const drinks = require("./models/drinks.js")
 const food = require("./models/food.js")
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the Gitpub App!")
+    res.render("index.ejs")
 })
 
 app.get("/drinks", (req, res) => {
